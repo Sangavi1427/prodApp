@@ -11,6 +11,7 @@ Table of Contents
 7.	Contact
 ________________________________________
 Features
+
 User Authentication
 •	Secure login and registration system.
 •	Session storage using cookies to maintain user sessions.
@@ -78,12 +79,14 @@ Platform
 •	Vercel (for deployment)
 ________________________________________
 Session Management
+
 The Productivity Tracker App uses session storage combined with cookies for secure user authentication and maintaining user sessions across different pages of the app.
 •	Session Information: Stored in cookies, ensuring the session persists even when navigating between pages.
 •	Session Expiration: Cookies are set to expire after a specific period of inactivity, automatically logging the user out.
 •	Secure Cookies: Cookies are configured with HttpOnly and Secure flags to prevent unauthorized access and ensure the session data is transmitted securely (over HTTPS).
 ________________________________________
 Usage
+
 The Productivity Tracker App is designed to help you stay organized and improve your productivity by tracking tasks, goals, and personal progress.
 Dashboard
 •	Upon logging in, you will be greeted with a user-friendly dashboard displaying key sections like your task list, daily goals, and progress.
@@ -105,18 +108,19 @@ Customization & Notifications
 Focus Mode
 •	Enable Focus Mode to block distractions and concentrate on your tasks.
 ________________________________________
-Screenshots
-(Screenshots will be added later)
-________________________________________
 Contributors
+
 We thank the following people for their contributions to this project:
-•	[Your Name] - GitHub Profile
-•	[Contributor Name] - GitHub Profile
+•	Sangamithra S-github.com/sangamithrasaravanan123
+•	Siddiq M-github.com/Sid-047
+•	Pavani Shakthima S - github.com/pavaniselvakumar
+•	Sangavi- github.com/Sangavi1427
 ________________________________________
 Contact
+
 For any inquiries or feedback, reach out to:
-Your Name
-•	Email: your-email@example.com
-•	GitHub: github.com/your-username
-•	Website: your-website.com
+Sangavi
+•	Email: iamsangavi2004@gmail.com
+•	GitHub: github.com/Sangavi1427
+•	Website: ProductivityTracker.com
 
