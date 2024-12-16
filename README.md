@@ -9,9 +9,8 @@ A feature-rich, responsive web application designed to enhance productivity by h
 2. [Technologies Used](#technologies-used)
 3. [Session Management](#session-management)
 4. [Usage](#usage)
-5. [Screenshots](#screenshots)
-6. [Contributors](#contributors)
-7. [Contact](#contact)
+5. [Contributors](#contributors)
+6. [Contact](#contact)
 
 ---
 
@@ -155,7 +154,7 @@ We thank the following people for their contributions to this project:
 - **Sangamithra S** - [GitHub](https://github.com/sangamithrasaravanan123)
 - **Siddiq M** - [GitHub](https://github.com/Sid-047)
 - **Pavani Shakthima S** - [GitHub](https://github.com/pavaniselvakumar)
-- **Sangavi** - [GitHub](https://github.com/Sangavi1427)
+- **Sangavi G** - [GitHub](https://github.com/Sangavi1427)
 
 ---
 
