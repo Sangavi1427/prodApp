@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HomePage from "./components/Firstpage";  // HomePage file
+import LandingPage from "./components/FirstPage";  // HomePage file
 import LoginRegister from "./components/LoginRegister";  // LoginRegister file
 import Dashboard from "./components/Dashboard";
 import TaskList from "./components/TaskList";
@@ -24,7 +24,7 @@ const App = () => {
     <Router>
       <Routes>
         {/* Route for HomePage, accessible at '/' */}
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<LandingPage />} />
 
         {/* Route for LoginPage, accessible at '/login' */}
         <Route path="/login" element={<LoginRegister />} />

@@ -5,71 +5,157 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const handleGetStarted = () => {
-    navigate("/login"); // Change this route if your LoginRegister page has a different path
+    navigate("/login");
   };
 
   return (
     <div
-      className="App-header"
       style={{
         fontFamily: "'Poppins', sans-serif",
-        padding: "50px",
+        height: "100vh",
+        background: "linear-gradient(135deg,rgb(0, 0, 0),rgb(8, 8, 8),rgb(0, 0, 0))",
         display: "flex",
-        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        textAlign: "center",
+        position: "relative",
+        overflow: "hidden",
       }}
     >
-      {/* Title */}
-      <h1
+      {/* Background Animated Waves */}
+      <div
         style={{
-          fontSize: "4rem",
-          marginBottom: "20px",
-          color: "#00ffcc",
-          textShadow: "0 4px 10px rgba(0, 255, 255, 0.5)",
-          letterSpacing: "3px",
-          animation: "App-logo-spin 20s linear infinite", // Use spin animation from CSS file
+          position: "absolute",
+          top: "-20%",
+          left: "-10%",
+          width: "200%",
+          height: "200%",
+          background:
+            "radial-gradient(circle, rgba(0, 0, 0, 0.15) 0%, transparent 70%)",
+          animation: "moveWaves 10s infinite linear",
+          zIndex: 0,
         }}
-      >
-        Welcome to Your Productivity Hub
-      </h1>
+      ></div>
 
-      {/* Description */}
-      <p
+      {/* Hero Section Card */}
+      <div
         style={{
-          fontSize: "1.5rem",
-          marginBottom: "40px",
-          color: "#ddd",
-          maxWidth: "600px",
+          zIndex: 2,
+          background: "rgba(8, 6, 6, 0.08)",
+          border: "1px solid rgba(0, 0, 0, 0.2)",
+          backdropFilter: "blur(12px)",
+          borderRadius: "20px",
+          padding: "60px",
+          textAlign: "center",
+          boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)",
+          animation: "fadeIn 1s ease-out",
+          maxWidth: "700px",
         }}
       >
-        Boost your productivity and track your daily habits, goals, and tasks
-        with ease. Start your journey to a better you!
-      </p>
+        {/* Title */}
+        <h1
+          style={{
+            fontSize: "3.5rem",
+            color: "#00ffcc",
+            marginBottom: "20px",
+            letterSpacing: "2px",
+            textShadow: "0 5px 15px rgba(0, 255, 255, 0.6)",
+          }}
+        >
+          UNLEASH YOUR POTENTIAL!
+        </h1>
 
-      {/* Get Started Button */}
-      <button
-        onClick={handleGetStarted}
-        className="App-link" // Leverage existing CSS styles
+        {/* Subtitle */}
+        <p
+          style={{
+            fontSize: "1.25rem",
+            lineHeight: "1.8",
+            color: "#e0e0e0",
+            marginBottom: "40px",
+          }}
+        >
+          Your productivity is about to reach new heights. Track your goals,
+          organize tasks, and achieve greatness with ease.
+        </p>
+
+        {/* Get Started Button */}
+        <button
+          onClick={handleGetStarted}
+          style={{
+            padding: "15px 40px",
+            fontSize: "1.5rem",
+            color: "#ffffff",
+            fontWeight: "600",
+            border: "none",
+            borderRadius: "30px",
+            background:
+              "linear-gradient(90deg,rgb(232, 235, 234),rgb(72, 72, 75),rgb(15, 51, 44),rgb(0, 0, 0))",
+            backgroundSize: "300%",
+            boxShadow: "0 10px 30px rgba(37, 116, 116, 0.4)",
+            cursor: "pointer",
+            transition: "all 0.3s ease",
+            animation: "gradientMove 5s infinite linear",
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.transform = "scale(1.1)";
+            e.currentTarget.style.boxShadow =
+              "0 15px 40px rgba(165, 211, 211, 0.6)";
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.transform = "scale(1)";
+            e.currentTarget.style.boxShadow =
+              "0 10px 30px rgba(135, 167, 167, 0.4)";
+          }}
+        >
+          Get Started
+        </button>
+      </div>
+
+      {/* Floating Decorations */}
+      <div
         style={{
-          padding: "15px 40px",
-          fontSize: "1.5rem",
-          fontWeight: "700",
-          border: "3px solid #00ffcc",
-          borderRadius: "30px",
-          cursor: "pointer",
-          transition: "transform 0.3s ease",
+          position: "absolute",
+          bottom: "10%",
+          left: "5%",
+          width: "150px",
+          height: "150px",
+          background: "rgba(0, 255, 255, 0.3)",
+          borderRadius: "50%",
+          filter: "blur(80px)",
+          zIndex: 1,
         }}
-        onMouseOver={(e) => {
-          e.currentTarget.style.transform = "scale(1.1)";
+      ></div>
+      <div
+        style={{
+          position: "absolute",
+          top: "15%",
+          right: "10%",
+          width: "200px",
+          height: "200px",
+          background: "rgba(0, 255, 255, 0.2)",
+          borderRadius: "50%",
+          filter: "blur(100px)",
+          zIndex: 1,
         }}
-        onMouseOut={(e) => {
-          e.currentTarget.style.transform = "scale(1)";
-        }}
-      >
-        Get Started
-      </button>
+      ></div>
+
+      {/* Animations */}
+      <style>
+        {`
+          @keyframes moveWaves {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(-50px, -50px); }
+            100% { transform: translate(0, 0); }
+          }
+          @keyframes gradientMove {
+            0% { background-position: 0%; }
+            100% { background-position: 100%; }
+          }
+          @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+          }
+        `}
+      </style>
     </div>
   );
 };
